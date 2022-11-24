@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{454DFB2B-AFBD-4B5C-8997-58F3300B51E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOMLSharp", "src\OOMLSharp\OOMLSharp.csproj", "{6D77DF52-5341-4206-9EA5-A1E19DB30CEE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{C8E73774-F782-4D0D-8F9D-3B106DB461D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOMLSharp.Test", "test\OOMLSharp.Test\OOMLSharp.Test.csproj", "{696EB630-21A8-4037-AC06-98B7A9BA609A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6D77DF52-5341-4206-9EA5-A1E19DB30CEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D77DF52-5341-4206-9EA5-A1E19DB30CEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D77DF52-5341-4206-9EA5-A1E19DB30CEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D77DF52-5341-4206-9EA5-A1E19DB30CEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{696EB630-21A8-4037-AC06-98B7A9BA609A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{696EB630-21A8-4037-AC06-98B7A9BA609A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{696EB630-21A8-4037-AC06-98B7A9BA609A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{696EB630-21A8-4037-AC06-98B7A9BA609A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6D77DF52-5341-4206-9EA5-A1E19DB30CEE} = {454DFB2B-AFBD-4B5C-8997-58F3300B51E0}
+		{696EB630-21A8-4037-AC06-98B7A9BA609A} = {C8E73774-F782-4D0D-8F9D-3B106DB461D3}
+	EndGlobalSection
+EndGlobal
