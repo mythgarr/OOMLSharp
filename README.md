@@ -3,6 +3,8 @@ OOMLSharp
 
 C# Object Oriented Mechanics Language
 
+An adaptation of the original OOML project (https://github.com/avalero/OOML).
+
 What's the OOML
 ===============
 
@@ -19,23 +21,15 @@ Up to current version OOML generates OpenSCAD code. Using OpenSCAD designers may
 What's the intention of the OOML
 ================================
 
+ * Leverages the efforts of the original OOML project contributors, adopting similar syntax and class inheritance
+where it makes sense to do so.
+ * Adapts C# language features such as expression trees and extension methods to provide improvements where possible. 
  * OOML brings together both the design of pieces through code (as it's done with OpenSCAD) with the programming power 
-of an Object Oriented Language as C++.
-
+of an Object Oriented Language as C#.
  * OOML provides a powerful tool for designers to boost their creativity building mechanical parts. 
- * As it uses C++, designers may use any other existing C++ library to calculate, manipulate, create their parts.
- * OOML allow designers to create and share their own Parts Libraries, which will certainly enrich the community.
-
-Up to current version OOML generates only OpenSCAD code. We are working to generate also code for other cad programs such as FreeCad, OpenRave
-including a GLViewer, etc.
-
-The reason OOML exports to OpenSCAD is because we were just testing the viability of a C++ library for defining 
-things using object oriented programming, giving semantical meaning, etc... 
-We did not want to deal with the visualization and STL files... 
-
-Now that it seems it is working we will start making a GL viewer, and generating STLs.. but that's not the real power. 
-If the object is semantically and geometrically defined, you could theoretically make whatever you want with it... 
-for example exporting to collada, for OpenRAVE, making stress tests...
-
-That's the idea, defining parts from their simple components and their geometrical operations. 
-It is like Open SCAD but object oriented.
+ * As it uses C#, designers may use any other existing C# library to calculate, manipulate, create their parts.
+ 
+OOMLSharp is NOT:
+ * A visualizer. OpenSCAD supports hot-reload, programs can overwrite an STL file and OpenSCAD will automatically refresh the preview.
+ * A boolean geometry processor. OpenSCAD has implemented a comprehensive system to handle boolean operations, there is no clear benefit
+to creating our own system for this purpose.

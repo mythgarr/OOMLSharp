@@ -16,6 +16,24 @@ public static class NumericExtensions
     }
 
     /// <summary>
+    /// Convert vector4 into an OpenSCAD array string.
+    /// </summary>
+    public static string ToScadString(this Vector4 vector4)
+    {
+        const string formatString = "[{0}, {1}, {2}, {3}]";
+        object[] components = { vector4.W, vector4.X, vector4.Y, vector4.Z };
+        return ToStringHelper(formatString, components);
+    }
+
+    /// <summary>
+    /// Converts f into an OpenSCAD string.
+    /// </summary>
+    public static string ToScadString(this float f)
+    {
+        return ToStringHelper("{0}", f);
+    }
+
+    /// <summary>
     /// Convert matrix4X4 into an OpenSCAD array string.
     /// </summary>
     public static string ToScadString(this Matrix4x4 matrix4X4)
